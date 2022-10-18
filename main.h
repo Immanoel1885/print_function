@@ -15,7 +15,7 @@
 
  struct formspec{
     char *symbol;
-    int (function*)(va_list);
+    int (*function)(va_list);
  } form_spec;
  typedef struct formspec form_spec;
 
